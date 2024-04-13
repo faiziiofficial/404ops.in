@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .login-form {
+                width: 300px;
+                margin: 0 auto;
+                font-family: Tahoma, Geneva, sans-serif;
+            }
+            .login-form h2 {
+                text-align: center;
+                color: #4d4d4d;
+                font-size: 25px;
+                padding-top: 20px;
+                transition: font-size 0.3s ease-in-out;
+            }
+            .login-form h2:hover {
+                font-size: 30px;
+            }
+            .login-form input[type="password"],
+            .login-form input[type="text"] {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #dddddd;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+            .login-form input[type="submit"],
+            .login-form button[type="button"] {
+                padding: 15px;
+                background-color: #535b63;
+                border: 0;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-weight: bold;
+                color: #ffffff;
+                flex: 1;
+                margin-right: 10px;
+            }
+            .login-form button[type="button"] {
+                background-color: #f0ad4e;
+            }
+            .login-form a {
+                color: blue;
+                text-decoration: none;
+            }
+            .login-form a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login-form">
+            <h2>404Ops.in</h2>
+            <form action="/backend" method="post">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <div class="button-container">
+                    <button type="button">Test2</button>
+                    <button type="button">Test3</button>
+                    <button type="button">Test4</button>
+                    <input type="submit" value="Login">
+                    
+                </div>
+                <p>Don't have an account? <a href="www.yoursignuppage.com">Sign Up</a></p>
+            </form>
+        </div>
+    </body>
+</html>
